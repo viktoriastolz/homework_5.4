@@ -12,7 +12,6 @@ if (!input?.trim() || isNaN(input.trim()) || !Number.isInteger(Number(input.trim
   } else {
     let isPrime = true;
 
-    // Check if the number is prime
     for (let i = 2; i <= Math.sqrt(num); i++) {
       if (num % i === 0) {
         isPrime = false;
