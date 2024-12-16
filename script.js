@@ -5,7 +5,7 @@ let input = prompt("Enter an integer:");
 if (!input?.trim() || isNaN(input.trim()) || !Number.isInteger(Number(input.trim()))) {
   alert("Error: Please enter a valid integer!");
 } else {
-  let num = Number(input.trim());
+  const num = Number(input);
 
   if (num <= 1) {
     alert(`The number ${num} is not a prime number.`);
